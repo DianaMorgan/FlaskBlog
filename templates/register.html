@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="container px-3 py-4">
+  <div class=" mx-auto col-lg-5 bg-light">
+    
+    <form class="row cols-2 g-2 p-4 p-md-5 border rounded-3 bg-light needs-validation" novalidate action="/register"
+      method="post">
+      <h1 class="mx-auto text-center pb-3">Registro</h1>
+      <div class="form-floating col-mb-4">
+        <input type="text" class="form-control" id="name" name="name" placeholder=" " required>
+        <label for="name" class="form-label">Nombre</label>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="form-floating col-mb-4">
+        <input type="text" class="form-control" id="lastname" name="lastname" placeholder=" " required>
+        <label for="lastname" class="form-label">Apellido</label>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="form-floating col-mb-4">
+        <input type="text" class="form-control" id="username" name="username" placeholder=" " required>
+        <label for="username" class="form-label">Username</label>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="form-floating col-mb-4">
+          <input type="text" class="form-control" id="email" name="email" aria-describedby="inputGroupPrepend" placeholder=" " required>
+          <label for="email" class="form-label">Correo</label>
+          <div class="invalid-feedback">Please choose a email.</div>
+      </div>
+
+      <div class="form-floating col-mb-6">
+        <input type="password" class="form-control" id="password" name="password" placeholder=" " required>
+        <label for="password" class="form-label">Contraseña</label>
+        <div class="invalid-feedback">Please provide a valid password.</div>
+      </div>
+      
+      <div class="col-mb-12 mt-4">
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

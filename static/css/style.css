@@ -1,0 +1,21 @@
+i{
+    font-size: x-large;
+}
+.card-body{
+    margin-left: .5rem;
+    margin-top: 0;
+}
+.card-body, .card-group, .row-cols-2, .card-text{
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+.card-group{
+    padding-right: 10%;
+}
+.row-cols-2>*{
+    width: 40% !important;
+}
+.navbar>ul{
+    padding-left: 60% !important;
+}

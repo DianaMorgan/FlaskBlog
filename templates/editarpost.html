@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="d-flex flex-row">
+<h2>Editar Post</h2>
+<form action="/editarpost" method="post" enctype="multipart/form-data">
+    <input type="hidden" value="{{id_post}}" name="id_post">
+    <div class="form-group">
+        <label for="texto">Texto</label>
+        <textarea class="form-control" name="texto" id="texto" cols="30" rows="10"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" name="submit">Editar</button>
+</form>
+<form action="/eliminar_nota" method="post">
+    <input type="hidden" name="id_post" value="{{id_post}}">
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>
+</div>
+
+{% endblock %}
